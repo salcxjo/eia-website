@@ -70,7 +70,7 @@ function App() {
       <MomentumScroll>
         <main className="relative">
           {/* Nav bar section*/}
-          <section className="min-h-screen" id="top">
+          <section className="min-h-[50vh]" id="top">
             <Navbar logoSrc={EiaLogo} />
             <FrontImage backgroundImage={pic1} />
           </section>

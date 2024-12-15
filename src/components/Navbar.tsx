@@ -1,5 +1,5 @@
-// components/Navbar/Navbar.tsx
-import React from 'react';
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   logoSrc: string;
@@ -7,22 +7,40 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ logoSrc, logoAlt = "Logo" }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      <nav className="fixed top-0 z-50 bg-white w-full p-6 sm:px-6 lg:px-8">
-        <div className="w-full mx-auto px-4">
+      <nav className="fixed top-0 z-50 bg-white w-full p-4 md:p-6">
+        <div className="w-full mx-auto px-2 md:px-4">
           <div className="flex items-center justify-between">
-            {/* Logo - changed to anchor tag with #top */}
+            {/* Logo */}
             <a href="#top" className="flex-shrink-0">
               <img
                 src={logoSrc}
                 alt={logoAlt}
-                className="h-12 w-auto"
+                className="h-8 md:h-12 w-auto"
               />
             </a>
 
-            {/* Navigation Links */}
-            <div className="flex items-center space-x-8">
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMenu}
+              className="md:hidden p-2 text-gray-600 hover:text-blue-600"
+            >
+              {isMenuOpen ? (
+                <X size={24} />
+              ) : (
+                <Menu size={24} />
+              )}
+            </button>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-black hover:text-blue-600">
                 About
               </a>
@@ -40,10 +58,50 @@ const Navbar: React.FC<NavbarProps> = ({ logoSrc, logoAlt = "Logo" }) => {
               </button>
             </div>
           </div>
+
+          {/* Mobile Menu */}
+          <div
+            className={`${
+              isMenuOpen ? 'flex' : 'hidden'
+            } md:hidden flex-col items-center pt-4 pb-2 space-y-4`}
+          >
+            <a 
+              href="#about" 
+              className="w-full text-center py-2 text-black hover:text-blue-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </a>
+            <a 
+              href="#projects" 
+              className="w-full text-center py-2 text-black hover:text-blue-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects & Activities
+            </a>
+            <a 
+              href="#get-involved" 
+              className="w-full text-center py-2 text-black hover:text-blue-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Get Involved
+            </a>
+            <a 
+              href="#contact" 
+              className="w-full text-center py-2 text-black hover:text-blue-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact Us
+            </a>
+            <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full max-w-[200px]">
+              DONATE
+            </button>
+          </div>
         </div>
       </nav>
-      {/* Spacer div to prevent content from going under navbar */}
-      <div className="h-24"></div>
+
+      {/* Spacer div - adjusted for mobile */}
+      <div className="h-16 md:h-24"></div>
     </>
   );
 };
