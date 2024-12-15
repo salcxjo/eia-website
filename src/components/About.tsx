@@ -70,15 +70,17 @@ const About: React.FC<AboutProps> = ({ galleryImage1, galleryImage2, galleryImag
 
       {/* Second About Section */}
       <div ref={ref4} className="flex flex-col md:flex-row p-4 md:p-10 justify-between items-center opacity-0 gap-4 md:gap-0">
-        <p className="text-xl md:text-3xl w-full md:w-1/2 font-medium text-center md:text-left">
-          We adhere to our parent organization and devote ourselves for the greater good of local communities and the world
-        </p>
-        <div className="items-center md:items-end flex flex-col w-full md:w-1/3">
+        {/* Title section - appears first on mobile */}
+        <div className="order-1 md:order-2 items-center md:items-end flex flex-col w-full md:w-1/3 mb-4 md:mb-0">
           <h1 className="text-4xl md:text-6xl">ABOUT</h1>
           <h1 className="text-2xl md:text-4xl text-green-700 pt-3 md:pt-6 text-center md:text-right">
             University Of Alberta Chapter
           </h1>
         </div>
+        {/* Description text - appears second on mobile */}
+        <p className="order-2 md:order-1 text-xl md:text-3xl w-full md:w-1/2 font-medium text-center md:text-left">
+          We adhere to our parent organization and devote ourselves for the greater good of local communities and the world
+        </p>
       </div>
     </div>
   );
