@@ -1,0 +1,13 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Abbezee';
+  src: url('./assets/fonts/Abbezee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
