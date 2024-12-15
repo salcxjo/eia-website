@@ -10,7 +10,7 @@ const GetInvolved: React.FC = () => {
       <p className="text-3xl text-center max-w-3xl">
         Join us as we make the future brighter for the under-served community
       </p>
-      <button className="bg-red-500 text-white text-2xl py-4 px-20 rounded-md mt-12">
+      <button className="bg-red-500 text-white text-2xl py-4 px-20 rounded-md mt-12 hover:bg-red-600 active:bg-red-700">
         JOIN OUR CLUB
       </button>
     </div>
