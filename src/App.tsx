@@ -99,8 +99,8 @@ function App() {
               <PastProjects projectImages={pastProjects} />
               <div className="p-10"></div>
             </div>
-
-            <div className="relative w-full">
+            
+            <div className="relative w-full bg-orange-500">
               <div className="relative w-full h-32 overflow-hidden bg-orange-500">
                 <div className="absolute w-[150%] h-[150%] bg-white transform skew-y-[4deg] origin-bottom-left translate-y-[-2px]"></div>
               </div>
