@@ -1,0 +1,32 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Abbezee';
+  src: url('./assets/fonts/Abbezee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: white;
+}
+::-webkit-scrollbar-thumb{
+  background: orange;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: orange;
+}
+/* Not needed */
+::-webkit-scrollbar-thumb::after{
+  background:green
+}
