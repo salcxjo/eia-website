@@ -14,11 +14,11 @@ import YouTubeEmbed from './components/YoutubeEmbed';
 
 // Import images
 import EiaLogo from './assets/images/logo.png';
-import pic1 from './assets/images/Top50/pic6.JPG';
+import pic1 from './assets/images/Top50/pic6.jpg';
 import pic2 from './assets/images/Top50/pic2.jpg';
 import pic3 from './assets/images/Top50/pic3.jpg';
-import pic4 from './assets/images/Top50/pic4.JPG';
-import pic5 from './assets/images/Top50/pic5.JPG';
+import pic4 from './assets/images/Top50/pic4.jpg';
+import pic5 from './assets/images/Top50/pic5.jpg';
 import picp1 from './assets/images/Top50/picp1.jpg';
 import picp2 from './assets/images/Top50/picp2.png';
 import picp3 from './assets/images/Top50/picp3.jpg';
