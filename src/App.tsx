@@ -10,6 +10,7 @@ import GetInvolved from './components/GetInvolved';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import MomentumScroll from './components/MomentumScroll';
+import YouTubeEmbed from './components/YouTubeEmbed';
 
 // Import images
 import EiaLogo from './assets/images/logo.png';
@@ -116,6 +117,13 @@ function App() {
           <section className="relative bg-white">
             <CurrentActivities activityImage={pic2025} />
           </section>
+
+    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px' }}>
+      <h1>Mishka Mayu Highlight Video:
+        
+      </h1>
+      <YouTubeEmbed videoId="gFzw7vzf48w" /> {/* Replace with your video ID */}
+    </div>
 
           {/* get Involved and newsletter section */}
           <section id="get-involved" className="relative bg-white">

@@ -1,9 +1,17 @@
 // components/Newsletter.tsx
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useEffect } from 'react';
 
 const Newsletter: React.FC = () => {
   const leftRef = useScrollAnimation();
   const rightRef = useScrollAnimation();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://widgets.sociablekit.com/linkedin-page-posts/widget.js';
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <div className="flex flex-col md:flex-row justify-between px-4 md:px-20 py-10 md:py-20 bg-white gap-8 md:gap-0">
@@ -26,9 +34,10 @@ const Newsletter: React.FC = () => {
       </div>
       <div 
         ref={rightRef} 
-        className="w-full md:w-1/2 opacity-0">
+        className="w-full md:w-1/2 opacity-0"
+      >
+        <div className='sk-ww-linkedin-page-post' data-embed-id='25509517'></div>
       </div>
-      
     </div>
   );
 };
