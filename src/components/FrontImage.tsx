@@ -20,7 +20,7 @@ const FrontImage: React.FC<FrontImageProps> = ({ backgroundImage }) => {
           pb-8 md:pb-20 text-center
           transform -translate-y-0"
       >
-        We are here to build a better future
+        Building Bridges | Transforming Lives
       </h1>
     </div>
   );

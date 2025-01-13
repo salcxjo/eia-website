@@ -39,11 +39,11 @@ const About: React.FC<AboutProps> = ({ galleryImage1, galleryImage2, galleryImag
       {/* First About Section */}
       <div ref={ref2} className="flex flex-col md:flex-row p-4 md:p-10 justify-between items-center opacity-0 gap-4 md:gap-0">
         <div className="flex flex-col w-full md:w-1/3 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl">ABOUT</h1>
-          <h1 className="text-2xl md:text-4xl text-blue-700 pt-3 md:pt-6">Engineer In Action</h1>
+          <h1 className="text-4xl md:text-6xl">About</h1>
+          <h1 className="text-2xl md:text-4xl text-blue-700 pt-3 md:pt-6">Engineers in Action</h1>
         </div>
-        <p className="text-xl md:text-3xl w-full md:w-1/2 font-medium">
-          We work with under-served communities and global partners to execute sustainable engineering projects that build local capacity and improve access to essential resources.
+        <p className="text-l md:text-3xl w-full md:w-1/2 font-medium">
+        Engineers in Action (EIA) is an international non-profit organization dedicated to improving access to essential resources by building footbridges in isolated communities. By addressing critical infrastructure needs, EIA helps reduce poverty, enhance economic opportunities, and improve health and safety. Through collaboration with local communities and university teams, EIA fosters sustainable development and empowers future leaders to create meaningful, lasting change.
         </p>
       </div>
 
@@ -72,7 +72,7 @@ const About: React.FC<AboutProps> = ({ galleryImage1, galleryImage2, galleryImag
       <div ref={ref4} className="flex flex-col md:flex-row p-4 md:p-10 justify-between items-center opacity-0 gap-4 md:gap-0">
         {/* Title section - appears first on mobile */}
         <div className="order-1 md:order-2 items-center md:items-end flex flex-col w-full md:w-1/3 mb-4 md:mb-0">
-          <h1 className="text-4xl md:text-6xl">ABOUT</h1>
+          <h1 className="text-4xl md:text-6xl">About</h1>
           <h1 className="text-2xl md:text-4xl text-green-700 pt-3 md:pt-6 text-center md:text-right">
             University Of Alberta Chapter
           </h1>

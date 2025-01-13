@@ -13,7 +13,7 @@ import MomentumScroll from './components/MomentumScroll';
 
 // Import images
 import EiaLogo from './assets/images/logo.png';
-import pic1 from './assets/images/Top50/pic1.jpg';
+import pic1 from './assets/images/Top50/pic6.jpg';
 import pic2 from './assets/images/Top50/pic2.jpg';
 import pic3 from './assets/images/Top50/pic3.jpg';
 import pic4 from './assets/images/Top50/pic4.jpg';
