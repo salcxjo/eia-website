@@ -18,6 +18,9 @@ import pic2 from './assets/images/Top50/pic2.jpg';
 import pic3 from './assets/images/Top50/pic3.jpg';
 import pic4 from './assets/images/Top50/pic4.jpg';
 import pic5 from './assets/images/Top50/pic5.jpg';
+import picp1 from './assets/images/Top50/picp1.jpg';
+import picp2 from './assets/images/Top50/picp2.png';
+import picp3 from './assets/images/Top50/picp3.jpg';
 
 function App() {
   // Handle anchor link clicks
@@ -44,22 +47,22 @@ function App() {
 
   const pastProjects = [
     {
-      image: pic1,
-      title: "Project A",
-      description: "Building a bridge for the community",
-      date: "01/2024 - 04/2024"
+      image: picp1,
+      title: "MiskhaMayu (2024)",
+      description: "Population: 520+",
+      date: "Span: 62.0m"
     },
     {
-      image: pic2,
-      title: "Project B",
-      description: "Raising awareness for recycling",
-      date: "05/2023 - 08/2023"
+      image: picp2,
+      title: "Suraj Mayu (2023)",
+      description: "Population: 950+",
+      date: "Span: 30.0m"
     },
     {
-      image: pic3,
-      title: "Project C",
-      description: "Helping with the local food bank",
-      date: "12/2022 - 09/2022"
+      image: picp3,
+      title: "Quinamara (2022)",
+      description: "Population: 350+",
+      date: "Span: 61.8m"
     }
   ];
 
