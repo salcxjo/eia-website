@@ -21,15 +21,14 @@ const Newsletter: React.FC = () => {
           <span className="text-pink-500">P</span>
         </h2>
         <p className="text-xl md:text-2xl">
-          Subscribe to our newsletter to never miss a thing from us!
+          Follow us on Linkedin to never miss a thing from us!
         </p>
       </div>
       <div 
         ref={rightRef} 
-        className="w-full md:w-1/2 opacity-0"
-      >
-        <div className="bg-purple-400 w-full h-[300px] md:h-[500px] rounded-2xl md:rounded-3xl"></div>
+        className="w-full md:w-1/2 opacity-0">
       </div>
+      
     </div>
   );
 };

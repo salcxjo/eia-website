@@ -21,6 +21,8 @@ import pic5 from './assets/images/Top50/pic5.jpg';
 import picp1 from './assets/images/Top50/picp1.jpg';
 import picp2 from './assets/images/Top50/picp2.png';
 import picp3 from './assets/images/Top50/picp3.jpg';
+import pic2025 from './assets/images/Top50/pic2025.png';
+
 
 function App() {
   // Handle anchor link clicks
@@ -112,7 +114,7 @@ function App() {
 
           {/* Current Activities section */}
           <section className="relative bg-white">
-            <CurrentActivities activityImage={pic3} />
+            <CurrentActivities activityImage={pic2025} />
           </section>
 
           {/* get Involved and newsletter section */}

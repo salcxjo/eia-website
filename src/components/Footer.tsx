@@ -5,13 +5,14 @@ const Footer = () => {
         <div className="flex flex-row justify-between items-center gap-8 md:gap-0 md:px-20 pr-3">
           <div className="flex flex-col items-center justify-center md:items-start w-full md:w-auto">
             <h3 className="text-xl font-semibold mb-2">Visit</h3>
-            <a href="#" className="text-blue-600">Social</a>
+            <a href="https://www.facebook.com" className="text-blue-600 mb-1 justify-center" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com" className="text-blue-600 justify-center" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
           <div className="flex flex-col md:items-center items-center justify-center w-full md:w-auto">
             <h3 className="text-xl font-semibold mb-2">Contact</h3>
             <a href="#" className="text-blue-600">Email</a>
           </div>
-          <div className="flex flex-col  items-center  md:items-center w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-center w-full md:w-auto">
             <h3 className="text-xl font-semibold mb-2">Donate</h3>
             <a href="#" className="text-blue-600">Link</a>
           </div>
