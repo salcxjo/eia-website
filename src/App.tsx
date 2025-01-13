@@ -10,7 +10,7 @@ import GetInvolved from './components/GetInvolved';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import MomentumScroll from './components/MomentumScroll';
-import YouTubeEmbed from './components/YouTubeEmbed';
+import YouTubeEmbed from './components/YoutubeEmbed';
 
 // Import images
 import EiaLogo from './assets/images/logo.png';

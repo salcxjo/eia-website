@@ -1,6 +1,5 @@
-import React from 'react';
 
-const YouTubeEmbed = ({ videoId }) => {
+const YouTubeEmbed: React.FC<{ videoId: string }> = ({ videoId }) => {
   return (
     <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
       <iframe
