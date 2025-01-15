@@ -73,7 +73,7 @@ function App() {
     // Router wrapper
     <Router>
       {/* Momentum scroll */}
-      <MomentumScroll>
+      {/* <MomentumScroll> */}
         <main className="relative">
           {/* Nav bar section*/}
           <section className="min-h-[50vh]" id="top">
@@ -139,7 +139,7 @@ function App() {
             <Footer />
           </section>
         </main>
-      </MomentumScroll>
+      {/* </MomentumScroll> */}
     </Router>
   );
 }
