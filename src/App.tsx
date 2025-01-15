@@ -9,7 +9,7 @@ import CurrentActivities from './components/CurrentActivities';
 import GetInvolved from './components/GetInvolved';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
-import MomentumScroll from './components/MomentumScroll';
+// import MomentumScroll from './components/MomentumScroll';
 import YouTubeEmbed from './components/YoutubeEmbed';
 
 // Import images
